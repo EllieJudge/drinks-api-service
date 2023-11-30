@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import * as coffeeService from '../services/coffee_service';
+import * as coffeeService from '../../services/coffee_service';
 
 export const getCoffee = async (req: Request<object, object, object, { coffeeName: string | undefined }>
     , res: Response) => {

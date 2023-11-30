@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { app } from '../app';
+import { app } from '../../app';
 
 test('GET /tea should return an object with the default tea name if no query paramaters are given', async () => {
     const res = await request(app)

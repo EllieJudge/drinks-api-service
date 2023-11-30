@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import * as teaService from '../services/tea_service';
+import * as teaService from '../../services/tea_service'
 
 export const getTea = async (req: Request<object, object, object, { teaName: string | undefined }>
     , res: Response) => {

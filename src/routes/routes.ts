@@ -5,5 +5,6 @@ export const router = express.Router();
 
 router.get('/coffee', coffeeController.getCoffee);
 router.get('/coffeelover', coffeeController.getCoffeeLover);
+router.get('/coffeeaddict', coffeeController.getCoffeeAddict);
 router.get('/tea', teaController.getTea);
 router.get('/tealover', teaController.getTeaLover);

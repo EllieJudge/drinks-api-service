@@ -10,5 +10,11 @@ export const getCoffee = async (req: Request<object, object, object, { coffeeNam
 
 export const getCoffeeLover = async (req: Request, res: Response) => {
     const coffeeLoverText = coffeeService.getCoffeeLover();
-    res.status(200).json(coffeeLoverText);
+    res.status(200).json(coffeeLoverText); // changed this to send json instead of text to treat this as a bit of data
 };
+
+export const getCoffeeAddict = async (req: Request, res: Response) => {
+    const coffeeAddictText = coffeeService.getCoffeeAddict();
+    res.send(coffeeAddictText) // sending plain text
+    res.status(200)
+}

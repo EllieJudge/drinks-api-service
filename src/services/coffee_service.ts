@@ -12,3 +12,7 @@ export const getCoffee = (name = 'Latte') => {
 export const getCoffeeLover = () => {
     return "I love coffee!"
 };
+
+export const getCoffeeAddict = () => {
+    return "I'm a coffee addict!"
+}
